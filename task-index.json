@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-03",
+  "tasks": [
+    {
+      "id": "SF-P0-01",
+      "phase": "P0",
+      "title": "复核产品默认项、文档冲突与成长风险",
+      "status": "TODO",
+      "dependencies": [],
+      "publicSummary": "复核产品方向、设计默认项与待解决问题，明确后续工作的基线。",
+      "issueNumber": 1,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/1"
+    },
+    {
+      "id": "SF-P0-02",
+      "phase": "P0",
+      "title": "核查真实主站、既有数据与集成边界",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P0-01"
+      ],
+      "publicSummary": "核查现有网站与独立游戏项目的连接边界和可用环境。",
+      "issueNumber": 2,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/2"
+    },
+    {
+      "id": "SF-P0-03",
+      "phase": "P0",
+      "title": "验证最小 Unity Web 构建与浏览器交付",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P0-01",
+        "SF-P0-02"
+      ],
+      "publicSummary": "验证网页客户端的基本构建与浏览器运行方式。",
+      "issueNumber": 3,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/3"
+    },
+    {
+      "id": "SF-P0-04",
+      "phase": "P0",
+      "title": "验证预发布身份桥与信任边界",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P0-02"
+      ],
+      "publicSummary": "验证游戏与现有网站入口的基础连接。",
+      "issueNumber": 4,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/4"
+    },
+    {
+      "id": "SF-P0-05",
+      "phase": "P0",
+      "title": "验证最小事务模型与资产一致性",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P0-02"
+      ],
+      "publicSummary": "验证关键数据操作的一致性与失败恢复方式。",
+      "issueNumber": 5,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/5"
+    },
+    {
+      "id": "SF-P1-01",
+      "phase": "P1",
+      "title": "建立赛季数据迁移与幂等入季",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P0-03",
+        "SF-P0-04",
+        "SF-P0-05"
+      ],
+      "publicSummary": "建立游戏数据基础与玩家加入流程。",
+      "issueNumber": 6,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/6"
+    },
+    {
+      "id": "SF-P1-02",
+      "phase": "P1",
+      "title": "实现可信身份、资源授权与缓存隔离",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P1-01"
+      ],
+      "publicSummary": "完善账号访问边界与不同用户之间的数据隔离。",
+      "issueNumber": 7,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/7"
+    },
+    {
+      "id": "SF-P1-03",
+      "phase": "P1",
+      "title": "实现幂等命令、版本冲突与数值边界",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P1-01",
+        "SF-P1-02"
+      ],
+      "publicSummary": "完善重复请求、状态冲突与异常输入的处理。",
+      "issueNumber": 8,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/8"
+    },
+    {
+      "id": "SF-P1-04",
+      "phase": "P1",
+      "title": "实现库存、所有权和容量预留",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P1-03"
+      ],
+      "publicSummary": "建立物品库存、归属与容量管理基础。",
+      "issueNumber": 9,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/9"
+    },
+    {
+      "id": "SF-P1-05",
+      "phase": "P1",
+      "title": "实现钱包账本、审计与基础管理开关",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P1-03"
+      ],
+      "publicSummary": "建立游戏经济记录与基础管理能力。",
+      "issueNumber": 10,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/10"
+    },
+    {
+      "id": "SF-P2-01",
+      "phase": "P2",
+      "title": "实现确定性战斗核心与状态结算",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P1-03"
+      ],
+      "publicSummary": "建立可复核的自动战斗逻辑与状态处理。",
+      "issueNumber": 11,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/11"
+    },
+    {
+      "id": "SF-P2-02",
+      "phase": "P2",
+      "title": "实现早期配装、技能执行和药水策略",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P2-01",
+        "SF-P1-04"
+      ],
+      "publicSummary": "实现早期配装、技能与消耗品的基础策略。",
+      "issueNumber": 12,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/12"
+    },
+    {
+      "id": "SF-P2-03",
+      "phase": "P2",
+      "title": "实现可信开局、活动锁与战斗快照",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P2-02",
+        "SF-P1-04",
+        "SF-P1-05"
+      ],
+      "publicSummary": "实现可靠的战斗开始流程与状态保护。",
+      "issueNumber": 13,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/13"
+    },
+    {
+      "id": "SF-P2-04",
+      "phase": "P2",
+      "title": "实现墙钟结算、重连和资源释放",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P2-03"
+      ],
+      "publicSummary": "完善战斗结算、断线恢复与资源返还。",
+      "issueNumber": 14,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/14"
+    },
+    {
+      "id": "SF-P2-05",
+      "phase": "P2",
+      "title": "实现等级奖励、首通进度与经验衰减",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P2-04"
+      ],
+      "publicSummary": "实现角色成长、关卡进度与奖励发放。",
+      "issueNumber": 15,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/15"
+    },
+    {
+      "id": "SF-P2-06",
+      "phase": "P2",
+      "title": "交付早期关卡的 Unity 战斗原型",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P2-05"
+      ],
+      "publicSummary": "交付可体验的早期关卡与战斗展示闭环。",
+      "issueNumber": 16,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/16"
+    },
+    {
+      "id": "SF-P3-01",
+      "phase": "P3",
+      "title": "落地配方配置、蓝图学习和装备资格",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P2-06"
+      ],
+      "publicSummary": "建立配方、蓝图学习与装备使用流程。",
+      "issueNumber": 17,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/17"
+    },
+    {
+      "id": "SF-P3-02",
+      "phase": "P3",
+      "title": "实现特色掉落、独立保底与关键蓝图恢复",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P3-01"
+      ],
+      "publicSummary": "完善特色蓝图获取与关键内容恢复流程。",
+      "issueNumber": 18,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/18"
+    },
+    {
+      "id": "SF-P3-03",
+      "phase": "P3",
+      "title": "实现原子制造、熟练度和随机词条",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P3-01",
+        "SF-P1-05"
+      ],
+      "publicSummary": "实现可靠的装备制造、制作成长与随机属性。",
+      "issueNumber": 19,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/19"
+    },
+    {
+      "id": "SF-P3-04",
+      "phase": "P3",
+      "title": "实现绑定传播与基于快照的分解",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P3-03"
+      ],
+      "publicSummary": "完善物品绑定、材料返还与分解规则。",
+      "issueNumber": 20,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/20"
+    },
+    {
+      "id": "SF-P3-05",
+      "phase": "P3",
+      "title": "实现耐久维修、教学权益与破产恢复",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P3-03"
+      ],
+      "publicSummary": "实现装备维护、教学与资源不足时的恢复路径。",
+      "issueNumber": 21,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/21"
+    },
+    {
+      "id": "SF-P3-06",
+      "phase": "P3",
+      "title": "交付制作仓库体验与基础经济闭环",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P3-02",
+        "SF-P3-04",
+        "SF-P3-05"
+      ],
+      "publicSummary": "完善制作与仓库界面，验证基础成长体验。",
+      "issueNumber": 22,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/22"
+    },
+    {
+      "id": "SF-P4-01",
+      "phase": "P4",
+      "title": "交付第一批关卡内容",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P3-06",
+        "SF-P4-06"
+      ],
+      "publicSummary": "交付首批扩展关卡并验证早期机制教学。",
+      "issueNumber": 23,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/23"
+    },
+    {
+      "id": "SF-P4-02",
+      "phase": "P4",
+      "title": "交付第二批关卡内容",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P4-01"
+      ],
+      "publicSummary": "交付下一批关卡并验证装备与角色成长衔接。",
+      "issueNumber": 24,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/24"
+    },
+    {
+      "id": "SF-P4-03",
+      "phase": "P4",
+      "title": "交付第三批关卡内容",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P4-02"
+      ],
+      "publicSummary": "交付中段关卡并验证机制组合与推进节奏。",
+      "issueNumber": 25,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/25"
+    },
+    {
+      "id": "SF-P4-04",
+      "phase": "P4",
+      "title": "交付第四批关卡内容",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P4-03"
+      ],
+      "publicSummary": "交付后段关卡并验证策略变化与战斗反馈。",
+      "issueNumber": 26,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/26"
+    },
+    {
+      "id": "SF-P4-05",
+      "phase": "P4",
+      "title": "交付第五批关卡与主线结局",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P4-04"
+      ],
+      "publicSummary": "交付最终批次关卡与主线完成体验。",
+      "issueNumber": 27,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/27"
+    },
+    {
+      "id": "SF-P4-06",
+      "phase": "P4",
+      "title": "完成成长配置、免费重置和技能面板",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P3-06"
+      ],
+      "publicSummary": "完善角色与技能配置、调整和成长展示。",
+      "issueNumber": 28,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/28"
+    },
+    {
+      "id": "SF-P4-07",
+      "phase": "P4",
+      "title": "验证完整成长路线与重复游玩目标",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P4-05",
+        "SF-P4-06"
+      ],
+      "publicSummary": "验证完整成长路线与可选市场之外的主线体验。",
+      "issueNumber": 29,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/29"
+    },
+    {
+      "id": "SF-P5-01",
+      "phase": "P5",
+      "title": "实现寄售上架、资格和权威查询",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P3-06",
+        "SF-P1-04"
+      ],
+      "publicSummary": "实现可选寄售市场的基础上架与浏览流程。",
+      "issueNumber": 30,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/30"
+    },
+    {
+      "id": "SF-P5-02",
+      "phase": "P5",
+      "title": "实现原子购买、手续费与交易重试",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P5-01",
+        "SF-P1-05"
+      ],
+      "publicSummary": "完善交易购买、结算与异常恢复。",
+      "issueNumber": 31,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/31"
+    },
+    {
+      "id": "SF-P5-03",
+      "phase": "P5",
+      "title": "实现撤单、到期与停市安全路径",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P5-02"
+      ],
+      "publicSummary": "完善商品撤回、到期和市场暂停时的处理。",
+      "issueNumber": 32,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/32"
+    },
+    {
+      "id": "SF-P5-04",
+      "phase": "P5",
+      "title": "交付市场体验与独立测试域灰度准备",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P5-03",
+        "SF-P4-07"
+      ],
+      "publicSummary": "完成市场界面与集成验证，准备分阶段开放。",
+      "issueNumber": 33,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/33"
+    },
+    {
+      "id": "SF-P6-01",
+      "phase": "P6",
+      "title": "实现可信最好成绩与榜单版本",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P4-07",
+        "SF-P1-05"
+      ],
+      "publicSummary": "实现可信成绩记录与排行榜展示。",
+      "issueNumber": 34,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/34"
+    },
+    {
+      "id": "SF-P6-02",
+      "phase": "P6",
+      "title": "实现赛季截止与迟到战斗结算",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P5-03",
+        "SF-P2-04"
+      ],
+      "publicSummary": "完善赛季结束时的业务边界与结算处理。",
+      "issueNumber": 35,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/35"
+    },
+    {
+      "id": "SF-P6-03",
+      "phase": "P6",
+      "title": "实现新季隔离并演练赛季切换",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P6-02",
+        "SF-P6-01"
+      ],
+      "publicSummary": "实现新赛季初始化并演练历史与当前进度隔离。",
+      "issueNumber": 36,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/36"
+    },
+    {
+      "id": "SF-P6-04",
+      "phase": "P6",
+      "title": "实现历史归档与幂等纯外观奖励",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P6-03",
+        "SF-P1-05"
+      ],
+      "publicSummary": "实现历史展示、归档与纪念奖励流程。",
+      "issueNumber": 37,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/37"
+    },
+    {
+      "id": "SF-P7-01",
+      "phase": "P7",
+      "title": "验证 Web 交付、分章资源与移动端恢复",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P4-07",
+        "SF-P5-04",
+        "SF-P6-04"
+      ],
+      "publicSummary": "验证网页交付、资源加载与移动设备恢复体验。",
+      "issueNumber": 38,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/38"
+    },
+    {
+      "id": "SF-P7-02",
+      "phase": "P7",
+      "title": "验证混合负载、日志与降级阈值",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P5-04",
+        "SF-P6-04"
+      ],
+      "publicSummary": "评估运行负载与容量，验证异常时的保护措施。",
+      "issueNumber": 39,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/39"
+    },
+    {
+      "id": "SF-P7-03",
+      "phase": "P7",
+      "title": "完成身份、资产与管理攻击面回归",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P5-04",
+        "SF-P6-04"
+      ],
+      "publicSummary": "复核账号、资产与管理功能的安全边界。",
+      "issueNumber": 40,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/40"
+    },
+    {
+      "id": "SF-P7-04",
+      "phase": "P7",
+      "title": "完成一致性备份与隔离恢复演练",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P6-04"
+      ],
+      "publicSummary": "演练数据备份与隔离恢复，核查记录一致性。",
+      "issueNumber": 41,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/41"
+    },
+    {
+      "id": "SF-P7-05",
+      "phase": "P7",
+      "title": "形成发布候选并完成主站与合同回归",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P7-01",
+        "SF-P7-02",
+        "SF-P7-03",
+        "SF-P7-04"
+      ],
+      "publicSummary": "汇总发布候选证据并验证现有网站与兼容性。",
+      "issueNumber": 42,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/42"
+    },
+    {
+      "id": "SF-P8-01",
+      "phase": "P8",
+      "title": "经明确授权发布并执行小范围灰度",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P7-05"
+      ],
+      "publicSummary": "在获得明确授权后执行发布和小范围验证。",
+      "issueNumber": 43,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/43"
+    },
+    {
+      "id": "SF-P8-02",
+      "phase": "P8",
+      "title": "观察经济与运行指标并按门槛扩大开放",
+      "status": "TODO",
+      "dependencies": [
+        "SF-P8-01"
+      ],
+      "publicSummary": "观察上线表现并依据验证结果调整开放范围。",
+      "issueNumber": 44,
+      "issueUrl": "https://github.com/xdgf558/station-cat-season-forge/issues/44"
+    }
+  ]
+}
